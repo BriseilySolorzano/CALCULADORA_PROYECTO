@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@id/tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:text="¡BIENVENIDOS!"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:hint="Escribe un numero..."
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:hint="Escribe un numero..."
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num2"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:text="CALCULAR"
+        android:textColorHighlight="#070505" />
+
+
+    <RadioGroup
+        android:id="@+id/radioOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/suma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9C8CBD"
+            android:checked="true"
+            android:text="SUMA"
+            android:textColor="#000000"
+            android:textColorHighlight="#070505" />
+
+        <RadioButton
+            android:id="@+id/btnRESTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C8CBD"
+            android:text="RESTA"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/btnMULTI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C8CBD"
+            android:text="MULTIPLICAR"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/btnDIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C8CBD"
+            android:text="DIVIDIR"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/btnPERCENT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C8CBD"
+            android:text="PORCENTAJE"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/btnEXPO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C8CBD"
+            android:text="EXPONENCIACIÓN"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/btnFACTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C8CBD"
+            android:text="FACTORIAL"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/btnRAIZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C8CBD"
+            android:text="RAIZ"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalcular"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:text=" R// = "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioOpciones"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Briseily Yamileth Solozarno Hernandez SMSS030723" />
+
+
+</RelativeLayout>
